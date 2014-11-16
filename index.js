@@ -7,16 +7,17 @@ var PSD = require('./lib/init')('./blank.psd');
 
 var parseHeader = require('./lib/header'),
     parseColorMode = require('./lib/colorMode'),
-    parseImageResources = require('./lib/imageResources');
+    parseImageResources = require('./lib/imageResources'),
+    parseLayerMask = require('./lib/layerMask');
 
 parseHeader(PSD);
 parseColorMode(PSD);
 parseImageResources(PSD);
-//parseLayerMask(PSD);
+parseLayerMask(PSD);
 //parseImage(PSD);
 
 
-console.log(PSD);
+//console.log(PSD);
 
 
 module.exports = function(path){
