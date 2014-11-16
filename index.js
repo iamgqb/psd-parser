@@ -7,7 +7,7 @@ var PSD = require('./lib/init')('./blank.psd');
 
 var parseHeader = require('./lib/header'),
     parseColorMode = require('./lib/colorMode'),
-    parseImageResources = require('./lib/imageResources')
+    parseImageResources = require('./lib/imageResources');
 
 parseHeader(PSD);
 parseColorMode(PSD);
