@@ -8,12 +8,12 @@ var PSD = require('./lib/init')('./blank.psd');
 var parseHeader = require('./lib/header'),
     parseColorMode = require('./lib/colorMode'),
     parseImageResources = require('./lib/imageResources'),
-    parseLayerMask = require('./lib/layerMask');
+    parseLayerMaskInfo = require('./lib/layerMaskInfo');
 
 parseHeader(PSD);
 parseColorMode(PSD);
 parseImageResources(PSD);
-parseLayerMask(PSD);
+parseLayerMaskInfo(PSD);
 //parseImage(PSD);
 
 
