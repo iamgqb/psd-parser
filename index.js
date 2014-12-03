@@ -17,7 +17,7 @@ parseLayerMaskInfo(PSD);
 //parseImage(PSD);
 
 
-//console.log(PSD);
+console.log(PSD);
 
 
 module.exports = function(path){
