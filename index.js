@@ -17,8 +17,8 @@ parseLayerMaskInfo(PSD);
 //parseImage(PSD);
 
 
-//console.log(PSD);
-
+//console.log(PSD.layerMaskInfo.layerInfo.layers);
+//PSD.layerMaskInfo.layerInfo.layers[0].saveAsPng('test.png')
 
 module.exports = function(path){
     return require('./lib/init')(path)
