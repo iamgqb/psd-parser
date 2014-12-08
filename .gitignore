@@ -1,4 +1,5 @@
 *.psd
 .idea
 .DS_Store
+*.png
 node_modules
