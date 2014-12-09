@@ -12,4 +12,8 @@ var psd = PSD.parse('./example/blank.psd');
 console.time('go')
 console.log(psd.file.buffer.length)
 psd.imageData.saveAsPng('./example/test.png')
+//console.log(psd)
+for(var i=0;i<psd.layerMaskInfo.layerInfo.layers.length;i++){
+    psd.layerMaskInfo.layerInfo.layers[i].saveAsPng('./example/'+i+'.png')
+}
 console.timeEnd('go')
