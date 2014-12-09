@@ -7,5 +7,9 @@ var PSD = require('../index');
 var psd = PSD.parse('./example/blank.psd');
 //console.log(PSD.layerMaskInfo.layerInfo.layers);
 //PSD.layerMaskInfo.layerInfo.layers[0].saveAsPng('test.png')
-console.log(psd.imageData);
-psd.imageData.saveAsPng('./example/image/test.png');
+//console.log(psd.imageData);
+//psd.imageData.saveAsPng('./example/image/test.png');
+console.time('go')
+console.log(psd.file.buffer.length)
+psd.imageData.saveAsPng('./example/test.png')
+console.timeEnd('go')
