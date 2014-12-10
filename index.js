@@ -8,7 +8,8 @@ var parseHeader = require('./lib/header'),
     parseImageResources = require('./lib/imageResources'),
     parseLayerMaskInfo = require('./lib/layerMaskInfo'),
     parseImageData = require('./lib/imageData'),
-    init = require('./lib/init');
+    init = require('./lib/init'),
+    handle = require('./lib/handler');
 
 exports.parse = function(path){
     var PSD = init(path);
@@ -17,7 +18,7 @@ exports.parse = function(path){
     parseImageResources(PSD);
     parseLayerMaskInfo(PSD);
     parseImageData(PSD);
-    return PSD
+    return handle(PSD);
 };
 //TODO 树形分层
 //一些get方法，如链接图层
