@@ -21,7 +21,9 @@ c版 [psdump](https://github.com/alco/psdump)
 	var PSD = require('psdparser');
 	var psd = PSD.parse('./test.psd');
 	console.log(psd)
-	
+	psd.getDescendants() //扁平化的图层数组
+	psd.getTree() //树型结构的图层数组，与psd中结构相符
+    console.log(psd._psd_) //解析psd后的原始对象	
 ```
 
 ### TODO
