@@ -4,17 +4,18 @@
 
 var PSD = require('../index');
 
-var psd = PSD.parse('./example/1024.psd');
-//console.log(PSD.layerMaskInfo.layerInfo.layers);
-//PSD.layerMaskInfo.layerInfo.layers[0].saveAsPng('test.png')
-//console.log(psd.imageData);
-//psd.imageData.saveAsPng('./example/image/test.png');
-console.time('go')
-//console.log(psd.file.buffer.length)
-//psd.imageData.saveAsPng('./example/test.png')
-//console.log(psd.getTree())
-console.log(psd.getSlices())
-//for(var i=0;i<psd.layerMaskInfo.layerInfo.layers.length;i++){
-//    psd.layerMaskInfo.layerInfo.layers[i].saveAsPng('./example/'+i+'.png')
-//}
-console.timeEnd('go')
+var psd = PSD.parse('./example/test.psd');
+
+console.time('go');
+
+//console.log(psd.getTree());
+console.log(psd.getDescendants());//会带有layer group，目前没有去掉
+
+//psd.saveAsPng('./example/output.png');
+
+var layers = psd.getDescendants();
+for(var i=0;i<layers.length;i++){
+    layers[i].saveAsPng('./example/'+i+'.png');
+}
+
+console.timeEnd('go');
