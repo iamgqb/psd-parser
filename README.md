@@ -6,6 +6,8 @@
 
 官方psd文档，部分有错 [Adobe Photoshop File Formats Specification](http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/)
 
+翻译文档(不完整) [Adobe Photoshop File Formats Specification](http://gitlab.alibaba-inc.com/qingbo.gqb/psd-spec-translate/raw/master/index.html)
+
 ### 其他的PSD解析
 coffee版 [psd.js](https://github.com/meltingice/psd.js)
 
@@ -33,7 +35,7 @@ c版 [psdump](https://github.com/alco/psdump)
 
 ### TODO
 
-- 图层的树型输出
+- ~~图层的树型输出~~
 - 文字图层处理
 - 挂一些get方法上去
 - saveAsPng 路径不存在时的错误
