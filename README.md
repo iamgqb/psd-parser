@@ -33,10 +33,23 @@ c版 [psdump](https://github.com/alco/psdump)
     psd.getDescendants()[0].saveAsPng('layer.png')
 ```
 
+
+现在可以获取文本图层中的文字与细节
+```javascript
+
+    var PSD = require('../index');
+    var psd = PSD.parse('./example/test.psd');
+
+    console.log(psd.getDescendants()[0].get('text')); //文本图层中的文字
+    console.log(psd.getDescendants()[0].get('wordSnippets')); //文本图层中的文字细节，以数组形式展现
+
+```
+
+
 ### TODO
 
 - ~~图层的树型输出~~
-- 文字图层处理
-- 挂一些get方法上去
+- ~~文字图层处理~~
+- ~~挂一些get方法上去~~
 - saveAsPng 路径不存在时的错误
 - 发布到npm
