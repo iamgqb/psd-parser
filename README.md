@@ -17,6 +17,11 @@ c版 [psdump](https://github.com/alco/psdump)
 
 因为 ruby 版与 c 版对于前端来讲不好直接拿来用呐，coffee版输出的对象很庞大，同时运行时还要先编译一下，于是 **生命不息，折腾不止** ，有了这个版本；
 
+### 安装
+```
+npm install psd-parser
+```
+
 ### 简单使用
 ```javascript
 
@@ -52,4 +57,4 @@ c版 [psdump](https://github.com/alco/psdump)
 - ~~文字图层处理~~
 - ~~挂一些get方法上去~~
 - saveAsPng 路径不存在时的错误
-- 发布到npm
+- ~~发布到npm~~
