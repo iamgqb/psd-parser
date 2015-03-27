@@ -25,7 +25,7 @@ npm install psd-parser
 ### 简单使用
 ```javascript
 
-	var PSD = require('psdparser');
+	var PSD = require('psd-parser');
 	var psd = PSD.parse('./test.psd');
 	console.log(psd)
 	psd.getDescendants() //扁平化的图层数组
