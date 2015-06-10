@@ -6,7 +6,8 @@
 
 官方psd文档，部分有错 [Adobe Photoshop File Formats Specification](http://www.adobe.com/devnet-apps/photoshop/fileformatashtml/)
 
-翻译文档(不完整) [Adobe Photoshop File Formats Specification](http://gitlab.alibaba-inc.com/qingbo.gqb/psd-spec-translate/raw/master/index.html)
+翻译文档(不完整) [Adobe Photoshop File Formats Specification](https://github.com/imgqb/psd-spec-translate)
+
 
 ### 其他的PSD解析
 coffee版 [psd.js](https://github.com/meltingice/psd.js)
